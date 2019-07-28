@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>myNavigation</title>
+</head>
+<body>
+    <main id="keyboard">
+    </main>
+</body>
+<link rel="stylesheet" href="./style.css">
+<script>
+//0、创建工具函数
+function createTag(tag){
+   return document.createElement(tag);
+}
+//1、创建键盘字母及对应网址
+    var kbd_arr=[
+        ["Q","W","E","R","T","Y","U","I","O","P"],
+        ["A","S","D","F","G","H","J","K","L"],
+        ["Z","X","C","V","B","N","M"]
+    ]
+    var kb_lc={
+        "Q":"qq.com",
+        "W":"weibo.com"
+    }
+//2、循环创建键盘块
+    var main=document.getElementById("keyboard");
+    for(var i=0;i<kbd_arr.length;i++){
+        var row_div=createTag("div");
+        row_div.className="row"+(i+1);
+        //👇
+        for(var j=0;j<kbd_arr[i].length;j++){
+            var kbd_div=createTag("div");
+            kbd_div.className="key";
+            var kbd_div_span=createTag("span");
+            kbd_div_span.textContent=kbd_arr[i][j];
+            var kbd_div_img=createTag("img");
+            kbd_div_img.src="//i.loli.net/2017/11/10/5a05afbc5e183.png";
+            kbd_div.appendChild(kbd_div_span);
+            kbd_div.appendChild(kbd_div_img);
+            row_div.appendChild(kbd_div);
+       }
+        main.appendChild(row_div);
+    }
+//2、绑定onkeyperss事件和onclick编辑事件
+//3、
+</script>
+</html>

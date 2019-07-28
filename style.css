@@ -1,0 +1,41 @@
+body{
+    text-align: center;
+    background:url("https://desk-fd.zol-img.com.cn/t_s1920x1080c5/g5/M00/0A/07/ChMkJ1waFUOIQAshAADO-ArNCngAAt4CwFzw_0AAM8Q397.jpg");
+    background-size: 1366px 768px;
+}
+#keyboard{
+    display:inline-block;
+    margin-top:100px;
+    border-radius: 10px;
+    background: rgba(136, 96, 96, 0.2);
+    padding: 20px;
+}
+main>div{
+    min-width: 660px;
+    margin: 20px
+}
+.key{
+    text-align: left;
+    box-sizing: border-box;
+    display:inline-block;
+    color: bla;
+    background: rgba(127, 156, 160, 0.884);
+    border: 1px solid rgba(127, 156, 160, 0.884);
+    border-radius: 5px;
+    width: 50px;
+    height: 49px;
+    margin: 0 5px;
+    padding-top:  1px;
+    font-family: "Helvetica";
+    box-shadow: 0 0 0 1px rgba(127, 156, 160, 0.884), 0 0 0 1.5px #1F2020, 0 3px 0 2px #080808;
+}
+.key>span{
+    display: block;
+    padding-left: 5px;
+    width: 100%;
+}
+.key>img{
+    margin-top: 5px;
+    widows: 20px;
+    height: 20px;
+}
