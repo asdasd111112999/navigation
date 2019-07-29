@@ -29,14 +29,25 @@ function createTag(tag){
     for(var i=0;i<kbd_arr.length;i++){
         var row_div=createTag("div");
         row_div.className="row"+(i+1);
-        //👇
         for(var j=0;j<kbd_arr[i].length;j++){
             var kbd_div=createTag("div");
+            kbd_div.id=kbd_arr[i][j];
             kbd_div.className="key";
+            kbd_div.onclick=function(e){
+                var element=e.target;
+                if(element.parentNode.id===""){
+                    var key_url=prompt("请为"+element.id+"键添加或更换网址");
+                    var xxx=element.id;
+                }else{
+                    var key_url=prompt("请为"+element.parentNode.id+"键添加或更换网址");
+                    var xxx=element.parentNode.id;
+                }
+                if(key_url!==null){kb_lc[xxx]=key_url;};
+            }
             var kbd_div_span=createTag("span");
             kbd_div_span.textContent=kbd_arr[i][j];
             var kbd_div_img=createTag("img");
-            kbd_div_img.src="//i.loli.net/2017/11/10/5a05afbc5e183.png";
+
             kbd_div.appendChild(kbd_div_span);
             kbd_div.appendChild(kbd_div_img);
             row_div.appendChild(kbd_div);
