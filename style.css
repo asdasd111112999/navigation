@@ -15,10 +15,11 @@ main>div{
     margin: 20px
 }
 .key{
+    color:#4D2A21;
     text-align: left;
     box-sizing: border-box;
     display:inline-block;
-    background: rgba(127, 156, 160, 0.884);
+    background:#639493;
     border: 1px solid rgba(127, 156, 160, 0.884);
     border-radius: 5px;
     width: 50px;
@@ -26,15 +27,18 @@ main>div{
     margin: 0 5px;
     font-family: "Helvetica";
     cursor: pointer;
-    box-shadow: 0 0 0 1px rgba(127, 156, 160, 0.884), 0 0 0 1.5px #1F2020, 0 3px 0 2px #080808;
+    box-shadow: 0 0 0 1px rgba(127, 156, 160, 0.884), 
+    0 0 0 1.5px #8A7059, 0 5px 0 2px #8A7059;
 }
 .key>span{
     display: block;
+    margin-top: 3px;
     padding-left: 5px;
     width: 100%;
 }
 .key>img{
-    margin-top: 5px;
-    widows: 20px;
-    height: 20px;
+    margin-top: 10px;
+    margin-left: 30px;
+    widows: 15px;
+    height: 15px;
 }
