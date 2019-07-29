@@ -42,3 +42,6 @@ main>div{
     widows: 15px;
     height: 15px;
 }
+main>span{
+    font-size: 10px;
+}

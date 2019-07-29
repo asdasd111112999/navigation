@@ -7,6 +7,7 @@
 <body>
     <main id="keyboard">
     </main>
+    
 </body>
 <link rel="stylesheet" href="./style.css">
 <script>
@@ -80,7 +81,10 @@ function Check_img(xxx){
        //把行div添加到main中
         main.appendChild(row_div);
     }
-//5、添加keypress监听事件
+    var text_span=createTag("span");
+    text_span.textContent="点击键盘修改地址";
+    main.appendChild(text_span);
+//4、添加keypress监听事件
     document.addEventListener("keypress",function(e){
         var key=e.key;
         key=key.toUpperCase();
